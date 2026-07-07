@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Alex Rivera - Developer Portfolio. Information Systems Student, Aspiring Web Developer & Software Engineer. inspired by VS Code Monokai Pro theme.">
+  <meta name="keywords"
+    content="Portfolio, Software Developer, Web Developer, Programmer, Information Systems, Intern, Resume, HTML, CSS, JavaScript, Monokai Pro">
+  <meta name="author" content="Alex Rivera">
+  <title>Olivia Joanna | Developer Portfolio</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-offset="100">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-monokai py-3" id="navbar-spy">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        Olivia Joanna<span>.dev</span>
+      </a>
+      <button class="navbar-collapse-btn navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <!-- Background Code Decorations -->
+    <div class="hero-decorations">
+      <span class="decor-item decor-1">{}</span>
+      <span class="decor-item decor-2">&lt;&gt;</span>
+      <span class="decor-item decor-3">const</span>
+      <span class="decor-item decor-4">function</span>
+      <span class="decor-item decor-5">class</span>
+      <span class="decor-item decor-6">PHP</span>
+      <span class="decor-item decor-7">C#</span>
+      <span class="decor-item decor-8">MySQL</span>
+      <span class="decor-item decor-9">Git</span>
+      <span class="decor-item decor-10">Unity</span>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center py-4">
+        <!-- Hero Profile Image (Left) -->
+        <div class="col-lg-5 col-12 fade-in">
+          <div class="profile-editor-window mb-5 mb-lg-0">
+            <div class="editor-header">
+              <div class="editor-dot dot-red"></div>
+              <div class="editor-dot dot-yellow"></div>
+              <div class="editor-dot dot-green"></div>
+              <div class="editor-tabs">
+                <div class="editor-tab">
+                  <i class="bi bi-image-fill me-2" style="color: var(--accent-blue);"></i>profile.png
+                </div>
+              </div>
+            </div>
+            <div class="profile-image-container">
+              <img src="assets/images/hero.png" alt="Olivia Joanna S." class="hero-profile-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Intro (Right) -->
+        <div class="col-lg-7 col-12 fade-in mt-4 mt-lg-0 ps-lg-5" style="position: relative; z-index: 2;">
+          <p class="text-uppercase tracking-wider mb-2 font-monospace"
+            style="color: var(--accent-pink); font-size: 0.85rem; font-weight: 600;">// HELLO WORLD</p>
+          <h1 class="display-3 fw-bold mb-1" style="line-height: 1.15;">
+            Hi, I'm <span style="color: var(--accent-green);">Olivia Joanna S.</span>
+          </h1>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 mt-3 mb-3">
+            <span class="h5 mb-0 text-white opacity-85"
+              style="font-size: 1.15rem; font-weight: 600; font-family: var(--font-headings);">
+              <span style="color: var(--accent-blue);">Information Systems Student</span> | Aspiring Developer
+            </span>
+          </div>
+
+          <!-- Hero Code Decoration -->
+          <div class="hero-code-block">
+            <pre><code class="language-javascript"><span class="code-keyword">const</span> <span class="code-property">developer</span> <span class="code-operator">=</span> {
+  name: <span class="code-string">"Olivia Joanna S."</span>,
+  role: <span class="code-string">"Software Developer"</span>,
+  education: <span class="code-string">"Information Systems"</span>,
+  availableForInternship: <span class="code-boolean">true</span>
+};</code></pre>
+          </div>
+
+
+
+          <!-- CTA Action Buttons -->
+          <div class="d-flex flex-wrap gap-3">
+            <a href="assets/cv.pdf" class="btn btn-monokai-pink" download="Resume_Olivia_Joanna.pdf" id="btn-cv">
+              <i class="bi bi-file-earmark-arrow-down me-2"></i>Download CV
+            </a>
+            <a href="https://github.com/oliviajoanna" target="_blank" rel="noopener noreferrer"
+              class="btn btn-monokai-outline-purple" id="btn-github">
+              <i class="bi bi-github me-2"></i>GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/oliviajsanusi/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-monokai-outline-blue" id="btn-linkedin">
+              <i class="bi bi-linkedin me-2"></i>LinkedIn
+            </a>
+            <a href="mailto:oliviajsanusi@gmail.com" class="btn btn-monokai-outline-orange" id="btn-email">
+              <i class="bi bi-envelope me-2"></i>Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down-indicator text-center fade-in">
+      <a href="#about" class="text-decoration-none">
+        <span class="scroll-down-text">Scroll Down</span>
+        <i class="bi bi-arrow-down floating-arrow"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="bg-dark-section" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">About Me</h2>
+
+          <div class="card card-monokai about-card">
+            <div class="card-body p-0">
+              <p class="card-text fs-6 leading-relaxed mb-0">
+                I am an Information Systems student with a strong interest in software development and problem solving.
+                I enjoy building responsive web applications, learning new technologies, and writing clean, maintainable
+                code. I am looking for an internship where I can improve my technical skills while contributing to
+                real-world projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">Technical Skills</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+            <!-- Programming -->
+            <div class="col">
+              <div class="card card-monokai skill-card fe">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-code-slash" style="color: var(--accent-pink);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Programming</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>HTML</li>
+                  <li><i class="bi bi-check2"></i>CSS</li>
+                  <li><i class="bi bi-check2"></i>PHP</li>
+                  <li><i class="bi bi-check2"></i>C#</li>
+                  <li><i class="bi bi-check2"></i>C++</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="col">
+              <div class="card card-monokai skill-card db">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-database" style="color: var(--accent-orange);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Database</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>MySQL</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="col">
+              <div class="card card-monokai skill-card game">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-tools" style="color: var(--accent-yellow);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Tools</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>Git</li>
+                  <li><i class="bi bi-check2"></i>GitHub</li>
+                  <li><i class="bi bi-check2"></i>Unity</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Software Engineering -->
+            <div class="col">
+              <div class="card card-monokai skill-card be">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-gear-fill" style="color: var(--accent-green);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Software Engineering</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>SDLC</li>
+                  <li><i class="bi bi-check2"></i>Project Charter</li>
+                  <li><i class="bi bi-check2"></i>Requirements Analysis</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- System Analysis & Design -->
+            <div class="col">
+              <div class="card card-monokai skill-card vc">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-diagram-3-fill" style="color: var(--accent-blue);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">System Analysis &amp; Design</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>Use Case Diagram</li>
+                  <li><i class="bi bi-check2"></i>Activity Diagram</li>
+                  <li><i class="bi bi-check2"></i>Sequence Diagram</li>
+                  <li><i class="bi bi-check2"></i>ERD</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="col">
+              <div class="card card-monokai skill-card lang">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-people-fill" style="color: var(--accent-purple);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Soft Skills</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>Problem Solving</li>
+                  <li><i class="bi bi-check2"></i>Teamwork</li>
+                  <li><i class="bi bi-check2"></i>Communication</li>
+                  <li><i class="bi bi-check2"></i>Adaptability</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="projects-slider-wrapper mt-4">
+            <div class="projects-slider" id="projectsSlider">
+
+              <!-- Project 1 -->
+              <div class="project-slide">
+                <div class="card card-monokai project-card">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/project-ecommerce.svg" class="project-img"
+                      alt="E-Commerce Web Application Mockup">
+                  </div>
+                  <div class="card-body p-4 d-flex flex-column">
+                    <h4 class="card-title h5 mb-2">E-Commerce Application</h4>
+                    <p class="card-text small mb-4 flex-grow-1">
+                      A fully responsive e-commerce web platform featuring real-time product browsing, user shopping
+                      carts, checkout handling, and a complete dashboard for shop managers.
+                    </p>
+                    <div class="mb-4">
+                      <span class="badge badge-tech">PHP</span>
+                      <span class="badge badge-tech">MySQL</span>
+                      <span class="badge badge-tech">Bootstrap 5</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/oliviajoanna" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-monokai-outline-purple btn-sm flex-fill">
+                        <i class="bi bi-github me-1"></i> GitHub
+                      </a>
+                      <a href="#" class="btn btn-monokai-blue btn-sm flex-fill">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-slide">
+                <div class="card card-monokai project-card">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/project-taskmanager.svg" class="project-img"
+                      alt="Task Management System Mockup">
+                  </div>
+                  <div class="card-body p-4 d-flex flex-column">
+                    <h4 class="card-title h5 mb-2">Task Manager Kanban</h4>
+                    <p class="card-text small mb-4 flex-grow-1">
+                      A collaborative productivity application styled like a Kanban task board. Features drag-and-drop
+                      actions, status groupings, task priorities, and deadline logs.
+                    </p>
+                    <div class="mb-4">
+                      <span class="badge badge-tech">C#</span>
+                      <span class="badge badge-tech">.NET</span>
+                      <span class="badge badge-tech">MySQL</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-monokai-outline-purple btn-sm flex-fill">
+                        <i class="bi bi-github me-1"></i> GitHub
+                      </a>
+                      <a href="#" class="btn btn-monokai-blue btn-sm flex-fill">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-slide">
+                <div class="card card-monokai project-card">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/project-game.svg" class="project-img" alt="Unity 2D Platformer Game Mockup">
+                  </div>
+                  <div class="card-body p-4 d-flex flex-column">
+                    <h4 class="card-title h5 mb-2">Unity 2D Platformer</h4>
+                    <p class="card-text small mb-4 flex-grow-1">
+                      A responsive pixel art 2D arcade platformer game created in Unity. Showcases complex physics
+                      systems, obstacle fields, sound feedback, and high-score saving.
+                    </p>
+                    <div class="mb-4">
+                      <span class="badge badge-tech">Unity</span>
+                      <span class="badge badge-tech">C#</span>
+                      <span class="badge badge-tech">Game Engine</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-monokai-outline-purple btn-sm flex-fill">
+                        <i class="bi bi-github me-1"></i> GitHub
+                      </a>
+                      <a href="#" class="btn btn-monokai-blue btn-sm flex-fill">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider Navigation Controls -->
+            <div class="slider-controls">
+              <button class="slider-control-btn" id="sliderPrev" aria-label="Previous Project">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="slider-control-btn" id="sliderNext" aria-label="Next Project">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">Education</h2>
+
+          <div class="row g-4 mt-2">
+            <!-- University -->
+            <div class="col-md-6 col-12">
+              <div class="card card-monokai h-100 p-4" style="border-left: 4px solid var(--accent-blue);">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon-wrapper m-0 me-3"
+                    style="background-color: rgba(120, 220, 232, 0.1); color: var(--accent-blue); width: 50px; height: 50px; font-size: 1.5rem;">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="h5 mb-0 fw-bold">Bachelor of Science in Information Systems</h4>
+                    <span class="small">State University of Technology | 2022 - Present</span>
+                  </div>
+                </div>
+                <p class="mb-0 small">
+                  Focusing on software development, database systems design, software engineering methodologies, and
+                  systems analysis. Active participant in coding hackathons and web development projects.
+                </p>
+              </div>
+            </div>
+
+            <!-- High School -->
+            <div class="col-md-6 col-12">
+              <div class="card card-monokai h-100 p-4" style="border-left: 4px solid var(--accent-yellow);">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon-wrapper m-0 me-3"
+                    style="background-color: rgba(255, 216, 102, 0.1); color: var(--accent-yellow); width: 50px; height: 50px; font-size: 1.5rem;">
+                    <i class="bi bi-building-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="h5 mb-0 fw-bold">High School Graduate (Science Major)</h4>
+                    <span class="small">Brighton Academy | 2019 - 2022</span>
+                  </div>
+                </div>
+                <p class="mb-0 small">
+                  Completed science stream with a focus on mathematics, computer science, and physics. Active member of
+                  the programming club and school science fairs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization Experience Section -->
+  <section id="experience" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">Organization Experience</h2>
+
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="card card-monokai timeline-card">
+                <div class="timeline-year">2024 - Present</div>
+                <h4 class="timeline-position">Head of Web Development Department</h4>
+                <div class="timeline-org">Information Systems Student Association (ISSA)</div>
+                <p class="card-text text-muted mb-0">
+                  Lead a development team of 5 students to manage, design, and update the campus student portal.
+                  Implemented event management systems, improved website accessibility, and reduced average page load
+                  speed by 35% using static rendering optimizations.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="card card-monokai timeline-card">
+                <div class="timeline-year">2023 - 2024</div>
+                <h4 class="timeline-position">Programming Mentor</h4>
+                <div class="timeline-org">University Computer Science Club</div>
+                <p class="card-text text-muted mb-0">
+                  Conducted weekly interactive workshops in web design (HTML, CSS) and object-oriented C++ programming.
+                  Assisted over 40+ first-year students in coding basic applications, resolving compilation bugs, and
+                  hosting their initial Git code repositories.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">Contact</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
+            <!-- CV -->
+            <div class="col">
+              <div class="card card-monokai contact-card">
+                <div class="contact-icon" style="color: var(--accent-green);">
+                  <i class="bi bi-file-earmark-pdf"></i>
+                </div>
+                <h4 class="contact-title">Curriculum Vitae</h4>
+                <p class="contact-desc">Download my latest resume sheet as a PDF document.</p>
+                <a href="assets/cv.pdf" class="btn btn-monokai-outline btn-sm w-100" download="Resume_Alex_Rivera.pdf">
+                  Download
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="col">
+              <div class="card card-monokai contact-card">
+                <div class="contact-icon" style="color: var(--accent-purple);">
+                  <i class="bi bi-github"></i>
+                </div>
+                <h4 class="contact-title">GitHub Portfolio</h4>
+                <p class="contact-desc">Browse my code repositories, scripts, and hobby setups.</p>
+                <a href="https://github.com/oliviajoanna" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-monokai-outline-purple btn-sm w-100">
+                  Visit profile
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="col">
+              <div class="card card-monokai contact-card">
+                <div class="contact-icon" style="color: var(--accent-blue);">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <h4 class="contact-title">LinkedIn Connect</h4>
+                <p class="contact-desc">Network with me, read postings, and view career status.</p>
+                <a href="https://www.linkedin.com/in/oliviajsanusi/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-monokai-outline-blue btn-sm w-100">
+                  Connect
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col">
+              <div class="card card-monokai contact-card">
+                <div class="contact-icon" style="color: var(--accent-orange);">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <h4 class="contact-title">Email Direct</h4>
+                <p class="contact-desc">Send project inquires or internship vacancy listings.</p>
+                <a href="mailto:oliviajsanusi@gmail.com" class="btn btn-monokai-outline-orange btn-sm w-100">
+                  Email Me
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0 opacity-75">
+        &copy; 2026 Olivia Joanna S.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

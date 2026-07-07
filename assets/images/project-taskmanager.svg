@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="600" height="400" rx="12" fill="#221F22" />
+  
+  <!-- Header / Top Bar -->
+  <rect x="0" y="0" width="600" height="60" fill="#2D2A2E" rx="12" />
+  <circle cx="20" cy="30" r="6" fill="#FF6188" />
+  <circle cx="36" cy="30" r="6" fill="#FFD866" />
+  <circle cx="52" cy="30" r="6" fill="#A9DC76" />
+  
+  <text x="85" y="36" font-family="'Poppins', sans-serif" font-weight="600" font-size="16" fill="#FCFCFA">Kanban Task Board</text>
+  <rect x="470" y="15" width="110" height="30" rx="6" fill="#FF6188" />
+  <text x="525" y="34" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#2D2A2E" text-anchor="middle">+ Add Task</text>
+
+  <!-- Kanban Columns -->
+  <!-- Column 1: To Do -->
+  <rect x="15" y="80" width="130" height="300" rx="8" fill="#2D2A2E" />
+  <rect x="25" y="90" width="110" height="24" rx="4" fill="#FF6188" opacity="0.15" />
+  <text x="35" y="106" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#FF6188">TO DO (3)</text>
+  
+  <!-- Cards in To Do -->
+  <rect x="25" y="124" width="110" height="70" rx="6" fill="#363337" />
+  <rect x="35" y="136" width="90" height="8" rx="2" fill="#FCFCFA" opacity="0.8" />
+  <rect x="35" y="150" width="70" height="6" rx="2" fill="#C1C0C0" opacity="0.5" />
+  <rect x="35" y="174" width="30" height="12" rx="4" fill="#FFD866" opacity="0.2" />
+  <rect x="40" y="180" width="20" height="2" rx="1" fill="#FFD866" />
+  
+  <rect x="25" y="202" width="110" height="50" rx="6" fill="#363337" />
+  <rect x="35" y="214" width="80" height="8" rx="2" fill="#FCFCFA" opacity="0.8" />
+  <rect x="35" y="232" width="40" height="12" rx="4" fill="#78DCE8" opacity="0.2" />
+  <rect x="40" y="238" width="30" height="2" rx="1" fill="#78DCE8" />
+
+  <!-- Column 2: In Progress -->
+  <rect x="160" y="80" width="130" height="300" rx="8" fill="#2D2A2E" />
+  <rect x="170" y="90" width="110" height="24" rx="4" fill="#FC9867" opacity="0.15" />
+  <text x="180" y="106" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#FC9867">IN PROGRESS</text>
+  
+  <!-- Cards in In Progress -->
+  <rect x="170" y="124" width="110" height="85" rx="6" fill="#363337" />
+  <rect x="180" y="136" width="90" height="8" rx="2" fill="#FCFCFA" opacity="0.8" />
+  <rect x="180" y="150" width="80" height="6" rx="2" fill="#C1C0C0" opacity="0.5" />
+  <rect x="180" y="160" width="60" height="6" rx="2" fill="#C1C0C0" opacity="0.5" />
+  <rect x="180" y="184" width="45" height="12" rx="4" fill="#FF6188" opacity="0.2" />
+  <rect x="185" y="190" width="35" height="2" rx="1" fill="#FF6188" />
+  <circle cx="255" cy="190" r="8" fill="#78DCE8" />
+
+  <!-- Column 3: In Review -->
+  <rect x="305" y="80" width="130" height="300" rx="8" fill="#2D2A2E" />
+  <rect x="315" y="90" width="110" height="24" rx="4" fill="#78DCE8" opacity="0.15" />
+  <text x="325" y="106" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#78DCE8">IN REVIEW</text>
+  
+  <!-- Cards in Review -->
+  <rect x="315" y="124" width="110" height="60" rx="6" fill="#363337" />
+  <rect x="325" y="136" width="85" height="8" rx="2" fill="#FCFCFA" opacity="0.8" />
+  <rect x="325" y="158" width="40" height="12" rx="4" fill="#AB9DF2" opacity="0.2" />
+  <rect x="330" y="164" width="30" height="2" rx="1" fill="#AB9DF2" />
+
+  <!-- Column 4: Done -->
+  <rect x="450" y="80" width="130" height="300" rx="8" fill="#2D2A2E" />
+  <rect x="460" y="90" width="110" height="24" rx="4" fill="#A9DC76" opacity="0.15" />
+  <text x="470" y="106" font-family="'Poppins', sans-serif" font-weight="600" font-size="11" fill="#A9DC76">DONE (12)</text>
+  
+  <!-- Cards in Done -->
+  <rect x="460" y="124" width="110" height="65" rx="6" fill="#363337" opacity="0.7" />
+  <rect x="470" y="136" width="90" height="8" rx="2" fill="#C1C0C0" opacity="0.5" />
+  <rect x="470" y="158" width="35" height="12" rx="4" fill="#A9DC76" opacity="0.3" />
+  <rect x="475" y="164" width="25" height="2" rx="1" fill="#A9DC76" />
+</svg>

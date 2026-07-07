@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Active Link Highlighting on Scroll (Scrollspy fallback) ---
   const sections = document.querySelectorAll('section, header');
   const navLinks = document.querySelectorAll('.navbar-monokai .nav-link');
-  
+
   const handleScrollSpy = () => {
     let currentSectionId = '';
     const scrollPos = window.scrollY + 120; // offset for sticky navbar
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
-      
+
       // If href is just #, scroll to top
       if (targetId === '#') {
         e.preventDefault();
@@ -143,3 +143,4 @@ document.addEventListener('DOMContentLoaded', () => {
     'color: #78DCE8; font-size: 14px; font-family: monospace;'
   );
 });
+

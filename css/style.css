@@ -166,7 +166,8 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
-  display: block; /* override default bootstrap display:none to allow css transitions */
+  display: block;
+  /* override default bootstrap display:none to allow css transitions */
   transition: opacity 200ms ease-out, transform 200ms ease-out, visibility 200ms ease-out;
 }
 
@@ -199,7 +200,8 @@ a:hover {
 
 /* Caret overrides and custom chevron rotation */
 .navbar-monokai .dropdown-toggle::after {
-  display: none !important; /* Hide default Bootstrap caret arrow */
+  display: none !important;
+  /* Hide default Bootstrap caret arrow */
 }
 
 .navbar-monokai .dropdown-toggle.show i.bi-chevron-down {
@@ -210,7 +212,8 @@ a:hover {
 @media (max-width: 991.98px) {
   .navbar-monokai .dropdown-menu-monokai {
     position: static;
-    display: none; /* fallback to default display in mobile collapsed accordion */
+    display: none;
+    /* fallback to default display in mobile collapsed accordion */
     opacity: 1;
     visibility: visible;
     transform: none;
@@ -220,12 +223,15 @@ a:hover {
     padding-left: 1.5rem;
     transition: none;
   }
+
   .navbar-monokai .dropdown-menu-monokai.show {
     display: block;
   }
+
   .navbar-monokai .dropdown-menu-monokai .dropdown-item {
     padding: 0.5rem 1rem;
   }
+
   .navbar-monokai .dropdown-menu-monokai .dropdown-item:hover,
   .navbar-monokai .dropdown-menu-monokai .dropdown-item:focus {
     background-color: transparent;
@@ -826,7 +832,8 @@ section {
 
 .project-img-placeholder {
   width: 100%;
-  height: 200px;
+  overflow: hidden;
+  border-radius: 1rem;
   background-color: #2D2A2E;
   display: flex;
   justify-content: center;
@@ -993,7 +1000,7 @@ section {
 
 .timeline-year {
   font-family: var(--font-mono);
-  font-weight: 600;
+  font-weight: 200;
   color: #FFD866;
   margin-bottom: 1rem;
   font-size: 0.9rem;
@@ -1043,19 +1050,34 @@ section {
   box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
 }
 
+/* Experience Image Gallery */
+.experience-gallery {
+  margin-top: 1.5rem;
+}
+
 .image-placeholder {
+  width: 100%;
   height: 180px;
-  border: 2px dashed rgba(255, 255, 255, .15);
+  /* Fixed height */
   border-radius: 14px;
+  overflow: hidden;
+  background: #2D2A2E;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  color: #888;
-  background: #2D2A2E;
-  transition: .3s;
+  transition: all .3s ease;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Crop to fill */
+  display: block;
+  transition: transform .3s ease;
 }
 
 .image-placeholder:hover {
@@ -1091,7 +1113,8 @@ section {
 
 .project-banner-placeholder {
   width: 100%;
-  height: 250px;
+  overflow: hidden;
+  border-radius: 1rem;
   background-color: #2D2A2E;
   border-radius: var(--border-radius);
   border: 1px solid rgba(255, 255, 255, 0.08);

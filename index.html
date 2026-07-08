@@ -48,11 +48,23 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#experience" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Experience <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem; transition: transform 0.2s;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-monokai" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#work-experience">
+                  <i class="bi bi-briefcase-fill me-2" style="color: var(--accent-blue);"></i>Work Experience
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#organization-experience">
+                  <i class="bi bi-people-fill me-2" style="color: var(--accent-pink);"></i>Leadership &amp; Organization
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -163,14 +175,69 @@
         <div class="col-lg-10 col-12 fade-in">
           <h2 class="section-title">About Me</h2>
 
-          <div class="card card-monokai about-card">
+          <div class="card card-monokai about-card mb-4">
             <div class="card-body p-0">
               <p class="card-text fs-6 leading-relaxed mb-0">
-                I am an Information Systems student with a strong interest in software development and problem solving.
-                I enjoy building responsive web applications, learning new technologies, and writing clean, maintainable
-                code. I am looking for an internship where I can improve my technical skills while contributing to
-                real-world projects.
+                I'm an Information Systems student at Universitas Pelita Harapan with a passion for software development
+                and problem solving. I enjoy building practical web applications, learning new technologies, and
+                applying software engineering principles to real-world projects. I'm currently seeking a software
+                engineering internship where I can contribute, learn, and grow as a developer.
               </p>
+            </div>
+          </div>
+
+          <!-- Education (Merged here) -->
+          <div class="card card-monokai p-4" style="border-left: 4px solid var(--accent-blue);">
+            <div class="row g-4">
+              <!-- Left side: Program & Uni Info -->
+              <div class="col-md-5">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon-wrapper m-0 me-3"
+                    style="background-color: rgba(120, 220, 232, 0.1); color: var(--accent-blue); width: 50px; height: 50px; font-size: 1.5rem;">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <div>
+                    <h4 class="h5 mb-0 fw-bold" style="color: var(--text-primary);">Bachelor of Information Systems</h4>
+                    <span class="small font-monospace"
+                      style="color: var(--accent-purple); font-weight: 500;">Universitas Pelita Harapan</span>
+                  </div>
+                </div>
+                <div class="mt-3 font-monospace small" style="color: #d6d6d6;">
+                  <div class="mb-2 px-3"><i class="bi bi-calendar3 me-2" style="color: var(--accent-yellow);"></i>2022 –
+                    Present</div>
+                  <div class="mb-2 px-3"><i class="bi bi-calendar-check me-2"
+                      style="color: var(--accent-green);"></i>Expected Graduation:
+                    2027</div>
+                  <div class="px-3"><i class="bi bi-star-fill me-2" style="color: var(--accent-yellow);"></i>GPA:
+                    3.98/4.00</div>
+                </div>
+              </div>
+
+              <!-- Right side: Focus & Coursework -->
+              <div class="col-md-7 ps-md-4">
+                <div class="row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <h5 class="h6 text-uppercase tracking-wider font-monospace mb-3"
+                      style="color: var(--accent-yellow);">
+                      // Focus & Coursework</h5>
+                    <ul class="list-unstyled timeline-list mb-0 small" style="color: #EFEFEF;">
+                      <li class="mb-2"><i class="bi bi-dot me-1 text-white"></i>Web Programming</li>
+                      <li class="mb-2"><i class="bi bi-dot me-1 text-white"></i>UI/UX Design</li>
+                      <li class="mb-2"><i class="bi bi-dot me-1 text-white"></i>Object-Oriented Prog</li>
+                      <li class="mb-0"><i class="bi bi-dot me-1 text-white"></i>Database Systems</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <h5 class="h6 text-uppercase tracking-wider font-monospace mb-3"
+                      style="color: var(--accent-yellow);">‎ </h5>
+                    <ul class="list-unstyled timeline-list mb-0 small" style="color: #EFEFEF;">
+                      <li class="mb-2"><i class="bi bi-dot me-1 text-white"></i>Systems Analysis & Design</li>
+                      <li class="mb-2"><i class="bi bi-dot me-1 text-white"></i>IS Project Management</li>
+                      <li class="mb-0"><i class="bi bi-dot me-1 text-white"></i>Cyber Security</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -194,11 +261,24 @@
                 </div>
                 <h4 class="card-title h5 mb-3">Programming</h4>
                 <ul class="skill-list">
-                  <li><i class="bi bi-check2"></i>HTML</li>
-                  <li><i class="bi bi-check2"></i>CSS</li>
-                  <li><i class="bi bi-check2"></i>PHP</li>
                   <li><i class="bi bi-check2"></i>C#</li>
+                  <li><i class="bi bi-check2"></i>PHP</li>
                   <li><i class="bi bi-check2"></i>C++</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="col">
+              <div class="card card-monokai skill-card vc">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-filetype-html" style="color: var(--accent-blue);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Web Development</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>HTML5</li>
+                  <li><i class="bi bi-check2"></i>CSS3</li>
+                  <li><i class="bi bi-check2"></i>Bootstrap</li>
                 </ul>
               </div>
             </div>
@@ -211,7 +291,75 @@
                 </div>
                 <h4 class="card-title h5 mb-3">Database</h4>
                 <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>SQL</li>
                   <li><i class="bi bi-check2"></i>MySQL</li>
+                  <li><i class="bi bi-check2"></i>Database Design</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Game Development -->
+            <div class="col">
+              <div class="card card-monokai skill-card game">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-controller" style="color: var(--accent-yellow);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Game Development</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>Unity</li>
+                  <li><i class="bi bi-check2"></i>C#</li>
+                  <li><i class="bi bi-check2"></i>Game Design</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- System Analysis & Design -->
+            <div class="col">
+              <div class="card card-monokai skill-card be">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-diagram-3-fill" style="color: var(--accent-green);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">System Analysis &amp; Design</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>Use Case Diagram</li>
+                  <li><i class="bi bi-check2"></i>Activity Diagram</li>
+                  <li><i class="bi bi-check2"></i>ERD</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Software Engineering -->
+            <div class="col">
+              <div class="card card-monokai skill-card lang">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-gear-fill" style="color: var(--accent-purple);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Software Engineering</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>SDLC</li>
+                  <li><i class="bi bi-check2"></i>System Analysis & Design</li>
+                  <li><i class="bi bi-check2"></i>UML</li>
+                  <li><i class="bi bi-check2"></i>Requirements Analysis</li>
+                  <li><i class="bi bi-check2"></i>ERD</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Project Management -->
+            <div class="col">
+              <div class="card card-monokai skill-card vc">
+                <div class="skill-icon-wrapper">
+                  <i class="bi bi-graph-up" style="color: var(--accent-blue);"></i>
+                </div>
+                <h4 class="card-title h5 mb-3">Project Management</h4>
+                <ul class="skill-list">
+                  <li><i class="bi bi-check2"></i>PMBOK</li>
+                  <li><i class="bi bi-check2"></i>Trello</li>
+                  <li><i class="bi bi-check2"></i>Sprint Planning</li>
+                  <li><i class="bi bi-check2"></i>Work Breakdown Structure (WBS)</li>
+                  <li><i class="bi bi-check2"></i>Gantt Chart</li>
+                  <li><i class="bi bi-check2"></i>Risk Management</li>
+                  <li><i class="bi bi-check2"></i>Project Charter</li>
                 </ul>
               </div>
             </div>
@@ -227,46 +375,19 @@
                   <li><i class="bi bi-check2"></i>Git</li>
                   <li><i class="bi bi-check2"></i>GitHub</li>
                   <li><i class="bi bi-check2"></i>Unity</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Software Engineering -->
-            <div class="col">
-              <div class="card card-monokai skill-card be">
-                <div class="skill-icon-wrapper">
-                  <i class="bi bi-gear-fill" style="color: var(--accent-green);"></i>
-                </div>
-                <h4 class="card-title h5 mb-3">Software Engineering</h4>
-                <ul class="skill-list">
-                  <li><i class="bi bi-check2"></i>SDLC</li>
-                  <li><i class="bi bi-check2"></i>Project Charter</li>
-                  <li><i class="bi bi-check2"></i>Requirements Analysis</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- System Analysis & Design -->
-            <div class="col">
-              <div class="card card-monokai skill-card vc">
-                <div class="skill-icon-wrapper">
-                  <i class="bi bi-diagram-3-fill" style="color: var(--accent-blue);"></i>
-                </div>
-                <h4 class="card-title h5 mb-3">System Analysis &amp; Design</h4>
-                <ul class="skill-list">
-                  <li><i class="bi bi-check2"></i>Use Case Diagram</li>
-                  <li><i class="bi bi-check2"></i>Activity Diagram</li>
-                  <li><i class="bi bi-check2"></i>Sequence Diagram</li>
-                  <li><i class="bi bi-check2"></i>ERD</li>
+                  <li><i class="bi bi-check2"></i>Trello</li>
+                  <li><i class="bi bi-check2"></i>Notion</li>
+                  <li><i class="bi bi-check2"></i>Visual Studio Code</li>
+                  <li><i class="bi bi-check2"></i>Figma</li>
                 </ul>
               </div>
             </div>
 
             <!-- Soft Skills -->
             <div class="col">
-              <div class="card card-monokai skill-card lang">
+              <div class="card card-monokai skill-card fe">
                 <div class="skill-icon-wrapper">
-                  <i class="bi bi-people-fill" style="color: var(--accent-purple);"></i>
+                  <i class="bi bi-people-fill" style="color: var(--accent-pink);"></i>
                 </div>
                 <h4 class="card-title h5 mb-3">Soft Skills</h4>
                 <ul class="skill-list">
@@ -274,6 +395,7 @@
                   <li><i class="bi bi-check2"></i>Teamwork</li>
                   <li><i class="bi bi-check2"></i>Communication</li>
                   <li><i class="bi bi-check2"></i>Adaptability</li>
+                  <li><i class="bi bi-check2"></i>Public Speaking</li>
                 </ul>
               </div>
             </div>
@@ -290,207 +412,821 @@
         <div class="col-lg-10 col-12 fade-in">
           <h2 class="section-title">Projects</h2>
 
-          <div class="projects-slider-wrapper mt-4">
-            <div class="projects-slider" id="projectsSlider">
+          <!-- Featured flagship project: Sportify -->
+          <div class="card card-monokai featured-project-card mb-5" style="border-left: 4px solid var(--accent-pink);">
+            <div class="card-body p-4 p-md-5">
+              <div class="mb-3 d-flex flex-wrap gap-2">
+                <span class="badge-status badge-status-pkm"><i class="bi bi-trophy-fill me-1"></i>🏆 PKM Funded</span>
+                <span class="badge-status badge-status-personal"><i class="bi bi-star-fill me-1"></i>⭐ Featured
+                  Project</span>
+                <span class="badge-status badge-status-static"><i class="bi bi-check-circle-fill me-1"></i>✅ Phase 1
+                  Completed</span>
+                <span class="badge-status badge-status-progress"><i class="bi bi-cone-striped me-1"></i>🚧 Phase 2 In
+                  Progress</span>
+              </div>
 
-              <!-- Project 1 -->
-              <div class="project-slide">
-                <div class="card card-monokai project-card">
-                  <div class="project-img-wrapper">
-                    <img src="assets/images/project-ecommerce.svg" class="project-img"
-                      alt="E-Commerce Web Application Mockup">
+              <h3 class="display-6 fw-bold mb-1 text-white">Sportify</h3>
+              <p class="lead mb-4" style="color: var(--accent-purple); font-weight: 500; font-size: 1.15rem;">
+                Social Sports Platform with AI Pose Estimation
+              </p>
+
+              <div class="project-banner-placeholder mb-4">
+                <i class="bi bi-trophy" style="color: var(--accent-pink);"></i>
+                <span class="mt-2 small text-muted font-monospace">// SPORTIFY FLAGSHIP BANNER</span>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="h6 text-uppercase tracking-wider font-monospace mb-2" style="color: var(--accent-green);">//
+                  Overview</h5>
+                <p class="card-text timeline-description mb-0">
+                  Sportify is a web-based social sports platform developed as part of the Indonesian PKM (Program
+                  Kreativitas Mahasiswa) competition. The platform combines community interaction with AI-based pose
+                  estimation to help users improve exercise techniques, connect with fellow athletes, and promote
+                  healthy lifestyles.
+                </p>
+              </div>
+
+              <!-- View Case Study Toggle Button -->
+              <div class="d-flex justify-content-start mt-4">
+                <button class="btn btn-monokai-blue px-4 py-2" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#sportifyCaseStudy" aria-expanded="false" aria-controls="sportifyCaseStudy">
+                  <i class="bi bi-file-earmark-richtext me-2"></i>View Case Study
+                </button>
+              </div>
+
+              <!-- Collapse Block: Detailed Case Study -->
+              <div class="collapse" id="sportifyCaseStudy">
+                <div class="pt-5 mt-4 border-top border-secondary border-opacity-25">
+
+                  <div class="row g-5">
+                    <!-- Left Column: Specs & Roles -->
+                    <div class="col-lg-6">
+
+                      <!-- Technologies -->
+                      <div class="mb-4">
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent-blue);">Technologies</h4>
+                        <div class="mb-2">
+                          <span class="small text-muted d-block mb-1">Frontend</span>
+                          <span class="badge badge-tech">HTML</span>
+                          <span class="badge badge-tech">CSS</span>
+                          <span class="badge badge-tech">Bootstrap</span>
+                          <span class="badge badge-tech">JavaScript</span>
+                        </div>
+                        <div class="mb-2">
+                          <span class="small text-muted d-block mb-1">Backend</span>
+                          <span class="badge badge-tech">PHP</span>
+                        </div>
+                        <div class="mb-2">
+                          <span class="small text-muted d-block mb-1">Database</span>
+                          <span class="badge badge-tech">MySQL</span>
+                        </div>
+                        <div class="mb-2">
+                          <span class="small text-muted d-block mb-1">AI</span>
+                          <span class="badge badge-tech">Pose Estimation</span>
+                        </div>
+                        <div class="mb-2">
+                          <span class="small text-muted d-block mb-1">Version Control</span>
+                          <span class="badge badge-tech">Git</span>
+                          <span class="badge badge-tech">GitHub (Private)</span>
+                        </div>
+                      </div>
+
+                      <!-- Software Engineering & Project Management -->
+                      <div class="mb-4">
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent-purple);">Software Engineering & Project
+                          Management</h4>
+                        <div class="d-flex flex-wrap gap-1">
+                          <span class="badge badge-tech">SDLC</span>
+                          <span class="badge badge-tech">System Analysis & Design</span>
+                          <span class="badge badge-tech">UML</span>
+                          <span class="badge badge-tech">PMBOK</span>
+                          <span class="badge badge-tech">Trello</span>
+                          <span class="badge badge-tech">Requirements Engineering</span>
+                          <span class="badge badge-tech">Agile Sprint Planning</span>
+                        </div>
+                      </div>
+
+                      <!-- My Contributions Checklist -->
+                      <div class="mb-4">
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent-green);">My Role & Contributions</h4>
+                        <div class="card card-monokai p-4 bg-dark bg-opacity-25"
+                          style="border-color: rgba(255,255,255,0.05);">
+                          <ul class="list-unstyled timeline-list mb-3">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Full Stack Web
+                              Development</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Database Design
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>System Analysis &
+                              Design</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>UML Documentation
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>PMBOK
+                              Documentation</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Sprint Planning
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Trello Project
+                              Management</li>
+                            <li class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i>Team Collaboration
+                            </li>
+                          </ul>
+                          <p class="small text-muted mb-0 font-monospace" style="font-size: 0.8rem;">
+                            * Note: AI model implementation and related academic research details were primarily handled
+                            by teammates.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Right Column: Timeline -->
+                    <div class="col-lg-6">
+                      <h4 class="h5 fw-bold mb-3" style="color: var(--accent-orange);">Development Timeline</h4>
+                      <div class="timeline-case-study">
+
+                        <!-- Phase 1 -->
+                        <div class="timeline-item-case-study mb-4">
+                          <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge bg-success text-dark fw-bold" style="font-size: 0.75rem;">Phase 1</span>
+                            <h5 class="h6 mb-0 text-white fw-bold">Initial Development (Completed)</h5>
+                          </div>
+                          <p class="small text-muted mb-3">Developed the first complete version of Sportify for PKM
+                            submission.</p>
+                          <div class="card card-monokai p-3 bg-dark bg-opacity-25 mb-2"
+                            style="border-color: rgba(255,255,255,0.05);">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2 small" style="color: #EFEFEF;">
+                              <div><i class="bi bi-check2 text-success me-1"></i>Requirements Analysis</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Project Charter</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Risk Register</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Budget Planning</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Work Breakdown Structure</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Gantt Chart</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Weekly Sprint Reports</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Meeting Documentation</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>System Analysis</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>UML Design</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Database Design</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>User Manual</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Functional Prototype</div>
+                              <div><i class="bi bi-check2 text-success me-1"></i>Demo Video</div>
+                            </div>
+                          </div>
+                          <div class="text-success small font-monospace"><i
+                              class="bi bi-check-circle-fill me-1"></i>Status: Completed</div>
+                        </div>
+
+                        <!-- Phase 2 -->
+                        <div class="timeline-item-case-study">
+                          <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge bg-warning text-dark fw-bold" style="font-size: 0.75rem;">Phase 2</span>
+                            <h5 class="h6 mb-0 text-white fw-bold">Expansion (Current)</h5>
+                          </div>
+                          <p class="small text-muted mb-3">The project is currently being expanded beyond the initial
+                            competition scope.</p>
+                          <div class="card card-monokai p-3 bg-dark bg-opacity-25 mb-2"
+                            style="border-color: rgba(255,255,255,0.05);">
+                            <div class="row row-cols-1 row-cols-sm-2 g-2 small" style="color: #EFEFEF;">
+                              <div><i class="bi bi-arrow-right-short text-warning me-1"></i>UI/UX Improvements</div>
+                              <div><i class="bi bi-arrow-right-short text-warning me-1"></i>Expanding Features</div>
+                              <div><i class="bi bi-arrow-right-short text-warning me-1"></i>Enhancing AI Pose</div>
+                              <div><i class="bi bi-arrow-right-short text-warning me-1"></i>Backend Optimization</div>
+                              <div><i class="bi bi-arrow-right-short text-warning me-1"></i>Performance Tweaks</div>
+                              <div><i class="bi bi-arrow-right-short text-warning me-1"></i>Preparing Deployment</div>
+                            </div>
+                          </div>
+                          <div class="text-warning small font-monospace"><i class="bi bi-cone-striped me-1"></i>Status:
+                            In Progress</div>
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body p-4 d-flex flex-column">
-                    <h4 class="card-title h5 mb-2">E-Commerce Application</h4>
-                    <p class="card-text small mb-4 flex-grow-1">
-                      A fully responsive e-commerce web platform featuring real-time product browsing, user shopping
-                      carts, checkout handling, and a complete dashboard for shop managers.
+
+                  <!-- Documentation Artifacts Grid -->
+                  <div class="mt-5">
+                    <h4 class="h5 fw-bold mb-3" style="color: var(--accent-yellow);">Documentation</h4>
+                    <div class="row row-cols-2 row-cols-md-5 g-3">
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-file-earmark-text display-6 mb-2" style="color: var(--accent-blue);"></i>
+                          <span class="small fw-bold text-white">Project Charter</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-clipboard-check display-6 mb-2" style="color: var(--accent-green);"></i>
+                          <span class="small fw-bold text-white">Requirements</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-exclamation-triangle display-6 mb-2" style="color: var(--accent-orange);"></i>
+                          <span class="small fw-bold text-white">Risk Register</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-cash-stack display-6 mb-2" style="color: var(--accent-yellow);"></i>
+                          <span class="small fw-bold text-white">Budget Report</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-bar-chart-steps display-6 mb-2" style="color: var(--accent-purple);"></i>
+                          <span class="small fw-bold text-white">WBS</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-calendar-range display-6 mb-2" style="color: var(--accent-pink);"></i>
+                          <span class="small fw-bold text-white">Gantt Chart</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-journal-text display-6 mb-2" style="color: var(--accent-blue);"></i>
+                          <span class="small fw-bold text-white">Weekly Sprints</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-people display-6 mb-2" style="color: var(--accent-green);"></i>
+                          <span class="small fw-bold text-white">Meeting Agenda</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-lightbulb display-6 mb-2" style="color: var(--accent-orange);"></i>
+                          <span class="small fw-bold text-white">Lessons Learned</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card card-monokai h-100 p-3 text-center doc-card">
+                          <i class="bi bi-book display-6 mb-2" style="color: var(--accent-yellow);"></i>
+                          <span class="small fw-bold text-white">User Manual</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Resources Buttons -->
+                  <div class="mt-5">
+                    <h4 class="h5 fw-bold mb-3" style="color: var(--text-primary);">Resources</h4>
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                      <a href="https://drive.google.com/file/d/1bvkHsVBJLiiCyWPVykO-0L3JG8S8G8UY/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-monokai-blue btn-sm">
+                        <i class="bi bi-play-btn-fill me-2"></i>Demo Video
+                      </a>
+                      <a href="https://drive.google.com/file/d/1iSG9jNLOmRwLttOtbm2pJFahBjZlej7v/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-monokai-outline-purple btn-sm">
+                        <i class="bi bi-file-earmark-pdf me-2"></i>Full Documentation
+                      </a>
+                      <a href="https://drive.google.com/file/d/19sk18uYsjVrd5VcLbmnDxJzyHNFruV6X/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-monokai-outline btn-sm">
+                        <i class="bi bi-book-half me-2"></i>User Manual
+                      </a>
+                      <a href="https://www.instagram.com/sportify.match/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-monokai-pink btn-sm">
+                        <i class="bi bi-instagram me-2"></i>Instagram
+                      </a>
+                      <div class="d-inline-block">
+                        <button class="btn btn-secondary btn-sm" disabled>
+                          <i class="bi bi-lock-fill me-2"></i>Private Repository
+                        </button>
+                      </div>
+                    </div>
+                    <p class="small text-muted mt-2 mb-0 font-monospace" style="font-size: 0.8rem;">
+                      * Repository will become public after the competition concludes.
                     </p>
-                    <div class="mb-4">
-                      <span class="badge badge-tech">PHP</span>
-                      <span class="badge badge-tech">MySQL</span>
-                      <span class="badge badge-tech">Bootstrap 5</span>
-                    </div>
-                    <div class="d-flex gap-2">
-                      <a href="https://github.com/oliviajoanna" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-monokai-outline-purple btn-sm flex-fill">
-                        <i class="bi bi-github me-1"></i> GitHub
-                      </a>
-                      <a href="#" class="btn btn-monokai-blue btn-sm flex-fill">
-                        <i class="bi bi-box-arrow-up-right me-1"></i>Demo
-                      </a>
+                  </div>
+
+                  <!-- Responsive Gallery Grid -->
+                  <div class="mt-5">
+                    <h4 class="h5 fw-bold mb-3" style="color: var(--accent-orange);">Gallery</h4>
+                    <div class="row row-cols-2 row-cols-md-4 g-3">
+
+                      <div class="col">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="Home Page"
+                          data-bs-desc="Landing page interface for user engagement and onboarding.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-display"></i>
+                            <span>Home Page</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="Dashboard"
+                          data-bs-desc="Comprehensive user dashboard displaying progress charts and sports statistics.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-grid-1x2"></i>
+                            <span>Dashboard</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="AI Feature"
+                          data-bs-desc="Pose estimation model interface evaluating training forms in real-time.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-cpu"></i>
+                            <span>AI Feature</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="Community Feed"
+                          data-bs-desc="Social hub where users share exercise updates and comments.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-chat-left-text"></i>
+                            <span>Community Feed</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="UML Documentation"
+                          data-bs-desc="UML diagrams illustrating the software architecture and structure.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-diagram-3"></i>
+                            <span>UML Documentation</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="Trello Board"
+                          data-bs-desc="Kanban board showing development workflows and weekly sprints.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-kanban"></i>
+                            <span>Trello Board</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col col-md-6">
+                        <a href="#" class="gallery-item-link text-decoration-none" data-bs-toggle="modal"
+                          data-bs-target="#galleryModal" data-bs-title="Competition Presentation"
+                          data-bs-desc="Pitch deck and slides used in PKM submission.">
+                          <div class="gallery-placeholder">
+                            <i class="bi bi-easel2"></i>
+                            <span>Competition Presentation</span>
+                          </div>
+                        </a>
+                      </div>
+
                     </div>
                   </div>
+
                 </div>
               </div>
 
-              <!-- Project 2 -->
-              <div class="project-slide">
-                <div class="card card-monokai project-card">
-                  <div class="project-img-wrapper">
-                    <img src="assets/images/project-taskmanager.svg" class="project-img"
-                      alt="Task Management System Mockup">
-                  </div>
-                  <div class="card-body p-4 d-flex flex-column">
-                    <h4 class="card-title h5 mb-2">Task Manager Kanban</h4>
-                    <p class="card-text small mb-4 flex-grow-1">
-                      A collaborative productivity application styled like a Kanban task board. Features drag-and-drop
-                      actions, status groupings, task priorities, and deadline logs.
-                    </p>
-                    <div class="mb-4">
-                      <span class="badge badge-tech">C#</span>
-                      <span class="badge badge-tech">.NET</span>
-                      <span class="badge badge-tech">MySQL</span>
-                    </div>
-                    <div class="d-flex gap-2">
-                      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-monokai-outline-purple btn-sm flex-fill">
-                        <i class="bi bi-github me-1"></i> GitHub
-                      </a>
-                      <a href="#" class="btn btn-monokai-blue btn-sm flex-fill">
-                        <i class="bi bi-box-arrow-up-right me-1"></i>Demo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+          </div>
 
-              <!-- Project 3 -->
-              <div class="project-slide">
-                <div class="card card-monokai project-card">
-                  <div class="project-img-wrapper">
-                    <img src="assets/images/project-game.svg" class="project-img" alt="Unity 2D Platformer Game Mockup">
+          <!-- Secondary Projects Grid (5 cards) -->
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+
+            <!-- Project 2: NailCherie -->
+            <div class="col">
+              <div class="card card-monokai project-card">
+                <div class="project-img-placeholder">
+                  <i class="bi bi-cart-fill" style="color: var(--accent-blue);"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge-status badge-status-fullstack"><i class="bi bi-cart-fill me-1"></i>Full
+                      Stack</span>
                   </div>
-                  <div class="card-body p-4 d-flex flex-column">
-                    <h4 class="card-title h5 mb-2">Unity 2D Platformer</h4>
-                    <p class="card-text small mb-4 flex-grow-1">
-                      A responsive pixel art 2D arcade platformer game created in Unity. Showcases complex physics
-                      systems, obstacle fields, sound feedback, and high-score saving.
-                    </p>
-                    <div class="mb-4">
-                      <span class="badge badge-tech">Unity</span>
-                      <span class="badge badge-tech">C#</span>
-                      <span class="badge badge-tech">Game Engine</span>
-                    </div>
-                    <div class="d-flex gap-2">
-                      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-monokai-outline-purple btn-sm flex-fill">
-                        <i class="bi bi-github me-1"></i> GitHub
-                      </a>
-                      <a href="#" class="btn btn-monokai-blue btn-sm flex-fill">
-                        <i class="bi bi-box-arrow-up-right me-1"></i>Demo
-                      </a>
-                    </div>
+                  <h4 class="card-title h5 mb-2">NailCherie</h4>
+                  <p class="card-text small mb-4 flex-grow-1">
+                    A full-stack e-commerce platform featuring customer and administrator interfaces with complete CRUD
+                    functionality, product management, authentication, and MySQL database integration.
+                  </p>
+                  <div class="mb-4">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS</span>
+                    <span class="badge badge-tech">Bootstrap</span>
+                    <span class="badge badge-tech">PHP</span>
+                    <span class="badge badge-tech">MySQL</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="https://github.com/oliviajoanna/nail-cherie" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-monokai-outline-purple btn-sm flex-fill">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://drive.google.com/file/d/1C8IQjnuKYilFfZ6BRpFGg9CG-GRSVMX3/view?usp=sharing"
+                      target="_blank" rel="noopener noreferrer" class="btn btn-monokai-blue btn-sm flex-fill">
+                      <i class="bi bi-play-btn-fill me-1"></i>Video Demo
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Slider Navigation Controls -->
-            <div class="slider-controls">
-              <button class="slider-control-btn" id="sliderPrev" aria-label="Previous Project">
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="slider-control-btn" id="sliderNext" aria-label="Next Project">
-                <i class="bi bi-chevron-right"></i>
-              </button>
+            <!-- Project 3: WhatsApp UI -->
+            <div class="col">
+              <div class="card card-monokai project-card">
+                <div class="project-img-placeholder">
+                  <i class="bi bi-whatsapp" style="color: var(--accent-purple);"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge-status badge-status-flutter"><i class="bi bi-phone me-1"></i>Flutter</span>
+                  </div>
+                  <h4 class="card-title h5 mb-2">WhatsApp UI</h4>
+                  <p class="card-text small mb-4 flex-grow-1">
+                    A Flutter application that recreates the WhatsApp mobile interface with responsive layouts and
+                    modern UI components to strengthen Flutter fundamentals.
+                  </p>
+                  <div class="mb-4">
+                    <span class="badge badge-tech">Flutter</span>
+                    <span class="badge badge-tech">Dart</span>
+                    <span class="badge badge-tech">UI</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="https://github.com/oliviajoanna/whatsappui" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-monokai-outline-purple btn-sm flex-fill">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://youtu.be/98HW3sZhFsg" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-monokai-blue btn-sm flex-fill">
+                      <i class="bi bi-youtube me-1"></i>Video Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Project 4: Halal by Flimty -->
+            <div class="col">
+              <div class="card card-monokai project-card">
+                <div class="project-img-placeholder">
+                  <i class="bi bi-globe" style="color: var(--accent-green);"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge-status badge-status-static"><i class="bi bi-globe me-1"></i>Static Website</span>
+                  </div>
+                  <h4 class="card-title h5 mb-2">Halal by Flimty</h4>
+                  <p class="card-text small mb-4 flex-grow-1">
+                    My first static website project developed to practice responsive web development using HTML, CSS,
+                    and Bootstrap.
+                  </p>
+                  <div class="mb-4">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS</span>
+                    <span class="badge badge-tech">Bootstrap</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <a href="https://github.com/oliviajoanna/halal-by-flimty" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-monokai-outline-purple btn-sm flex-fill">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://oliviajoanna.github.io/halal-by-flimty/" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-monokai-blue btn-sm flex-fill">
+                      <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Love.Exe -->
+            <div class="col">
+              <div class="card card-monokai project-card">
+                <div class="project-img-placeholder">
+                  <i class="bi bi-controller" style="color: var(--accent-yellow);"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge-status badge-status-personal"><i class="bi bi-controller me-1"></i>Personal
+                      Project</span>
+                  </div>
+                  <h4 class="card-title h5 mb-2">Love.Exe</h4>
+                  <p class="card-text small mb-4 flex-grow-1">
+                    My first Unity game developed using C#. Built to explore core game development concepts including
+                    player movement, interactions, scene management, and gameplay programming.
+                  </p>
+                  <div class="mb-4">
+                    <span class="badge badge-tech">Unity</span>
+                    <span class="badge badge-tech">C#</span>
+                  </div>
+                  <div class="d-flex gap-2 mt-auto">
+                    <button class="btn btn-secondary btn-sm w-100" disabled>
+                      <i class="bi bi-cone-striped me-1"></i>Coming Soon
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: Pull -->
+            <div class="col">
+              <div class="card card-monokai project-card">
+                <div class="project-img-placeholder">
+                  <i class="bi bi-controller" style="color: var(--accent-orange);"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge-status badge-status-progress"><i class="bi bi-trophy-fill me-1"></i>Competition
+                      Project</span>
+                  </div>
+                  <h4 class="card-title h5 mb-2">Pull</h4>
+                  <p class="card-text small mb-4 flex-grow-1">
+                    A Unity game currently developed for a competition. My primary contribution focuses on game design,
+                    gameplay mechanics, and player experience while collaborating with the development team.
+                  </p>
+                  <div class="mb-4">
+                    <span class="badge badge-tech">Unity</span>
+                    <span class="badge badge-tech">C#</span>
+                    <span class="badge badge-tech">Game Design</span>
+                  </div>
+                  <div class="d-flex gap-2 mt-auto">
+                    <button class="btn btn-secondary btn-sm w-100" disabled>
+                      <i class="bi bi-cone-striped me-1"></i>Coming Soon
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education">
+  <!-- Work Experience Section -->
+  <section id="work-experience" style="background-color: var(--bg-dark); padding: 90px 0 45px 0;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10 col-12 fade-in">
-          <h2 class="section-title">Education</h2>
-
-          <div class="row g-4 mt-2">
-            <!-- University -->
-            <div class="col-md-6 col-12">
-              <div class="card card-monokai h-100 p-4" style="border-left: 4px solid var(--accent-blue);">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="skill-icon-wrapper m-0 me-3"
-                    style="background-color: rgba(120, 220, 232, 0.1); color: var(--accent-blue); width: 50px; height: 50px; font-size: 1.5rem;">
-                    <i class="bi bi-mortarboard-fill"></i>
-                  </div>
-                  <div>
-                    <h4 class="h5 mb-0 fw-bold">Bachelor of Science in Information Systems</h4>
-                    <span class="small">State University of Technology | 2022 - Present</span>
-                  </div>
-                </div>
-                <p class="mb-0 small">
-                  Focusing on software development, database systems design, software engineering methodologies, and
-                  systems analysis. Active participant in coding hackathons and web development projects.
-                </p>
-              </div>
-            </div>
-
-            <!-- High School -->
-            <div class="col-md-6 col-12">
-              <div class="card card-monokai h-100 p-4" style="border-left: 4px solid var(--accent-yellow);">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="skill-icon-wrapper m-0 me-3"
-                    style="background-color: rgba(255, 216, 102, 0.1); color: var(--accent-yellow); width: 50px; height: 50px; font-size: 1.5rem;">
-                    <i class="bi bi-building-fill"></i>
-                  </div>
-                  <div>
-                    <h4 class="h5 mb-0 fw-bold">High School Graduate (Science Major)</h4>
-                    <span class="small">Brighton Academy | 2019 - 2022</span>
-                  </div>
-                </div>
-                <p class="mb-0 small">
-                  Completed science stream with a focus on mathematics, computer science, and physics. Active member of
-                  the programming club and school science fairs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Organization Experience Section -->
-  <section id="experience" style="background-color: var(--bg-dark);">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 col-12 fade-in">
-          <h2 class="section-title">Organization Experience</h2>
+          <h2 class="section-title">Work Experience</h2>
 
           <div class="timeline">
-            <!-- Timeline Item 1 -->
+
+            <!-- Administrative Support -->
             <div class="timeline-item">
               <div class="timeline-badge"></div>
               <div class="card card-monokai timeline-card">
-                <div class="timeline-year">2024 - Present</div>
-                <h4 class="timeline-position">Head of Web Development Department</h4>
-                <div class="timeline-org">Information Systems Student Association (ISSA)</div>
-                <p class="card-text text-muted mb-0">
-                  Lead a development team of 5 students to manage, design, and update the campus student portal.
-                  Implemented event management systems, improved website accessibility, and reduced average page load
-                  speed by 35% using static rendering optimizations.
+                <h4 class="timeline-position">Administrative Support</h4>
+                <div class="timeline-org">Student Life — Universitas Pelita Harapan</div>
+                <div class="timeline-year">September 2024 – October 2024</div>
+                <p class="card-text timeline-description mb-0">
+                  Provided administrative support by organizing documents, maintaining records, and assisting with
+                  daily operational tasks while ensuring accuracy and efficiency.
                 </p>
+
+                <hr class="border-secondary opacity-25 my-4">
+
+                <div class="timeline-images mt-4">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-image"></i>
+                        <p>Office Photo</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-award"></i>
+                        <p>Certificate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <!-- Timeline Item 2 -->
+            <!-- Human Resources Intern -->
             <div class="timeline-item">
               <div class="timeline-badge"></div>
               <div class="card card-monokai timeline-card">
-                <div class="timeline-year">2023 - 2024</div>
-                <h4 class="timeline-position">Programming Mentor</h4>
-                <div class="timeline-org">University Computer Science Club</div>
-                <p class="card-text text-muted mb-0">
-                  Conducted weekly interactive workshops in web design (HTML, CSS) and object-oriented C++ programming.
-                  Assisted over 40+ first-year students in coding basic applications, resolving compilation bugs, and
-                  hosting their initial Git code repositories.
+                <h4 class="timeline-position">Human Resources Intern</h4>
+                <div class="timeline-org">Link Net Karawaci</div>
+                <div class="timeline-year">May 2024</div>
+                <p class="card-text timeline-description mb-0">
+                  Assisted the Human Resources Department with administrative tasks, employee documentation, and
+                  record management while gaining professional workplace experience.
                 </p>
+
+                <hr class="border-secondary opacity-25 my-4">
+
+                <div class="timeline-images mt-4">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-building"></i>
+                        <p>Company Photo</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <p>HR Documentation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Tutor -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="card card-monokai timeline-card">
+                <h4 class="timeline-position">Tutor</h4>
+                <div class="timeline-org">Matica Education Center</div>
+                <div class="timeline-year">July 2024 – August 2024</div>
+                <p class="card-text timeline-description mb-0">
+                  Taught Mathematics, Science, and English to elementary and middle school students. Prepared learning
+                  materials and adapted teaching methods according to students' needs.
+                </p>
+
+                <hr class="border-secondary opacity-25 my-4">
+
+                <div class="timeline-images mt-4">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-people-fill"></i>
+                        <p>Teaching Photo</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-book"></i>
+                        <p>Learning Materials</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Organization Experience Section -->
+  <section id="organization-experience" style="background-color: var(--bg-dark); padding: 45px 0 90px 0;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12 fade-in">
+          <h2 class="section-title">Leadership &amp; Organization</h2>
+
+          <div class="timeline">
+
+            <!-- HMPSSI -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="card card-monokai timeline-card">
+                <h4 class="timeline-position">Member of Creative Media</h4>
+                <div class="timeline-org">Himpunan Mahasiswa Program Studi Sistem Informasi (HMPSSI) UPH</div>
+                <div class="timeline-year">Jul 2025 – Present</div>
+
+                <p class="card-text timeline-description mb-3">
+                  Contribute to the organization's creative media team by designing promotional materials and
+                  supporting
+                  branding initiatives for student events.
+                </p>
+
+                <ul class="timeline-list mb-0">
+                  <li><strong>Head of Committee – Information Systems Night 2026</strong> (Jan 2026 – Jun 2026)
+                    <br>Led the organizing committee for a networking event involving students, lecturers, staff, and
+                    alumni while coordinating multiple divisions and managing event execution.
+                  </li>
+
+                  <li><strong>Coordinator of Event Division – MAKRAB 2025</strong> (Aug 2025 – Oct 2025)
+                    <br>Managed the event division, coordinated committee members, and ensured successful execution of
+                    the annual gathering event.
+                  </li>
+                </ul>
+
+                <hr class="border-secondary opacity-25 my-4">
+
+                <div class="timeline-images mt-4">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-image"></i>
+                        <p>Event Poster</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-people-fill"></i>
+                        <p>Committee Photo</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-award"></i>
+                        <p>Certificate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Falcon Project -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="card card-monokai timeline-card">
+                <h4 class="timeline-position">Member of Publication & Content Creation Division</h4>
+                <div class="timeline-org">Falcon Project UPH</div>
+                <div class="timeline-year">2025</div>
+
+                <p class="card-text timeline-description mb-0">
+                  Assisted in creating promotional content and publication materials while collaborating with the
+                  media
+                  team to support project communication and event promotion.
+                </p>
+
+                <hr class="border-secondary opacity-25 my-4">
+
+                <div class="timeline-images mt-4">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-image"></i>
+                        <p>Project Design</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-camera-reels"></i>
+                        <p>Teaser Video</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-award"></i>
+                        <p>Certificate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MC Experience -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="card card-monokai timeline-card">
+                <h4 class="timeline-position">Master of Ceremony (MC)</h4>
+                <div class="timeline-org">Universitas Pelita Harapan & External Organizations</div>
+                <div class="timeline-year">2025 – 2026</div>
+
+                <p class="card-text timeline-description mb-3">
+                  Served as Master of Ceremony for university and community events, demonstrating strong
+                  communication,
+                  public speaking, and event coordination skills.
+                </p>
+
+                <ul class="timeline-list mb-0">
+                  <li>FAIDAS Day 2026 – Universitas Pelita Harapan</li>
+                  <li>Impact Fest 2026 – Universitas Pelita Harapan</li>
+                  <li>NiU Matsuri 2025 – Nihon Utopia 19th Anniversary Celebration</li>
+                </ul>
+
+                <hr class="border-secondary opacity-25 my-4">
+
+                <div class="timeline-images mt-4">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-mic-fill"></i>
+                        <p>FAIDAS Day</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-mic-fill"></i>
+                        <p>Impact Fest</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                      <div class="image-placeholder">
+                        <i class="bi bi-mic-fill"></i>
+                        <p>NiU Matsuri</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -587,6 +1323,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content card-monokai" style="border: 1px solid rgba(255, 255, 255, 0.15);">
+        <div class="modal-header border-bottom border-secondary border-opacity-25 py-3">
+          <h5 class="modal-title h5 text-white fw-bold" id="galleryModalLabel">Gallery Preview</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-4">
+          <div class="image-placeholder w-100 mb-4" style="height: 300px; border-style: dashed;">
+            <i class="bi bi-image" style="font-size: 4rem;"></i>
+            <p class="mt-2 text-muted">Preview Image Placeholder</p>
+          </div>
+          <h4 class="h5 fw-bold text-white mb-2" id="galleryPreviewTitle">Item Title</h4>
+          <p class="small text-muted mb-0" id="galleryPreviewDesc">Item Description</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Custom JS -->
   <script src="js/script.js"></script>
